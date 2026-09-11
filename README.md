@@ -176,25 +176,6 @@ Acesse `http://localhost:8000`. Use um servidor local em vez de abrir o HTML pel
 
 Ao trocar o modelo Orbit, revise as anotações, as coordenadas dos pontos e a sequência de câmera. Os pontos de fallback foram definidos especificamente para o modelo atual.
 
-## Publicar
-
-### Vercel
-
-O arquivo `vercel.json`, ao lado de `package.json`, configura a publicação como site estático: executa `npm run check` e serve a pasta `dist/`. O Vite continua disponível apenas para desenvolvimento local.
-
-Envie o conteúdo desta pasta para a raiz do repositório. A Root Directory da Vercel deve ser a pasta que contém `package.json` e `vercel.json` (a raiz do repositório, se os arquivos estiverem nela). Faça o commit da configuração e publique o novo commit; repetir o deploy de um commit antigo não inclui a correção.
-
-Se aparecer `Cannot resolve entry module index.html`, confirme que o novo deploy inclui `vercel.json`: sem ele, a detecção automática pode executar `vite build` na raiz, embora o HTML esteja em `dist/`.
-
-[Configuração oficial da Vercel](https://vercel.com/docs/project-configuration/vercel-json)
-
-### Outras hospedagens estáticas
-
-O site pode ser servido por uma hospedagem estática. O diretório publicado deve ser **`dist/`**, preservando `index.html`, `style.css`, `app.js`, `icon.svg` e `assets/`.
-
-Não há etapa de compilação obrigatória nem comando `npm run build` neste pacote. O Vite é usado para desenvolvimento. Não publique `node_modules/`.
-
-O ZIP não inclui histórico Git, credenciais ou configuração vinculada à hospedagem original. Ele está preparado para iniciar um repositório independente.
 
 ## Dependências externas e limites
 
