@@ -187,20 +187,6 @@ Ao trocar o modelo Orbit, revise as anotações, as coordenadas dos pontos e a s
 
 **Compatibilidade.** Sem WebGL ou acesso ao Sketchfab, o site apresenta mensagens de indisponibilidade. As artes e o conteúdo continuam locais, mas a experiência completa de 3D requer esses serviços.
 
-## Validação
-
-Durante o desenvolvimento foram realizadas verificações de sintaxe, referências locais, identificadores HTML e lógica com API simulada. As verificações de lógica cobriram etapas de scroll, retorno da câmera, carregamento tardio e projeção das chamadas.
-
-**Limite conhecido:** o ambiente de desenvolvimento não oferecia renderização WebGL. A aparência final dos modelos, a precisão dos pontos projetados e as transições reais de câmera precisam ser conferidas em um navegador com suporte a 3D. Essas verificações simuladas não constituem uma suíte automatizada incluída no pacote.
-
-Antes de apresentar o projeto, confira:
-
-- A sequência completa do Orbit ao descer e subir a página.
-- O alinhamento das chamadas com sensores e fones.
-- A composição em desktop e mobile.
-- A seleção e a remoção dos produtos.
-- O comportamento com movimento reduzido e eventuais falhas de carregamento.
-
 ## Créditos
 
 **Projeto e direção criativa:** Gabriel Almeida, com apoio de IA na implementação e na criação das artes de campanha.
